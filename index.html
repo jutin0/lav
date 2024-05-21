@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granja Ziza - Lava Jato Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Granja Ziza - Lava Jato Profesional</h1>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Servicios</h2>
+            <div class="item">
+                <h3>Lavado Básico</h3>
+                <p>$20</p>
+                <button onclick="agregarAlCarrito('Lavado Básico', 20)">Agregar</button>
+            </div>
+            <div class="item">
+                <h3>Lavado Completo</h3>
+                <p>$35</p>
+                <button onclick="agregarAlCarrito('Lavado Completo', 35)">Agregar</button>
+            </div>
+            <div class="item">
+                <h3>Lavado y Encera</h3>
+                <p>$50</p>
+                <button onclick="agregarAlCarrito('Lavado y Encera', 50)">Agregar</button>
+            </div>
+            <div class="item">
+                <h3>Lavado Interior y Exterior</h3>
+                <p>$60</p>
+                <button onclick="agregarAlCarrito('Lavado Interior y Exterior', 60)">Agregar</button>
+            </div>
+            <!-- Agrega más servicios aquí -->
+        </section>
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="listaCarrito"></ul>
+            <p id="total"></p>
+            <label for="fecha">Selecciona la fecha:</label>
+            <input type="date" id="fecha" name="fecha">
+            <label for="hora">Selecciona la hora:</label>
+            <input type="time" id="hora" name="hora">
+            <button onclick="procesarPedido()">Procesar Pedido</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
